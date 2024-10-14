@@ -56,16 +56,16 @@ public class Botto extends Bot {
 
         // Determine a shot that won't kill the bot...
         // We want to ram him instead for bonus points
-        if (e.getEnergy() > 16) {
+        if (e.getEnergy() > 30) {
             fire(3);
-        } else if (e.getEnergy() > 10) {
+        } else if (e.getEnergy() > 20) {
             fire(2);
-        } else if (e.getEnergy() > 4) {
+        } else if (e.getEnergy() > 10) {
             fire(1);
-        } else if (e.getEnergy() > 2) {
+        } else if (e.getEnergy() > 5) {
             fire(.5);
-        } else if (e.getEnergy() > .4) {
-            fire(.1);
+        } else if (e.getEnergy() > 1) {
+            fire(.3);
         }
         forward(40); // Ram him again!
     }
