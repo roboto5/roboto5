@@ -10,18 +10,18 @@ import dev.robocode.tankroyale.botapi.events.*;
 // Probably the first bot you will learn about.
 // Moves in a seesaw motion, and spins the gun around at each end.
 // ------------------------------------------------------------------
-public class A3Bot extends Bot {
+public class Botto extends Bot {
 
     int turnDirection = 1; // clockwise (-1) or counterclockwise (1)
 
     // The main method starts our bot
     public static void main(String[] args) {
-        new A3Bot().start();
+        new Botto().start();
     }
 
     // Constructor, which loads the bot config file
-    A3Bot() {
-        super(BotInfo.fromFile("t5-botto.json"));
+    Botto() {
+        super(BotInfo.fromFile("Botto.json"));
     }
 
     // Called when a new round is started -> initialize and do some movement
