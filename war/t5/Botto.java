@@ -44,6 +44,7 @@ public class Botto extends Bot {
         turnToFaceTarget(e.getX(), e.getY());
 
         var distance = distanceTo(e.getX(), e.getY());
+	fire(1);
         forward(distance + 5);
 
         rescan(); // Might want to move forward again!
@@ -56,9 +57,9 @@ public class Botto extends Bot {
 
         // Determine a shot that won't kill the bot...
         // We want to ram him instead for bonus points
-        if (e.getEnergy() > 30) {
+        if (e.getEnergy() > 20) {
             fire(3);
-        } else if (e.getEnergy() > 20) {
+        } else if (e.getEnergy() > 15) {
             fire(2);
         } else if (e.getEnergy() > 10) {
             fire(1);
